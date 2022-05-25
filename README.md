@@ -43,7 +43,17 @@ and y
 ![image](https://user-images.githubusercontent.com/85484107/170314710-e40f4882-0dcb-4201-a635-c567d130023c.png)
 and the enter key
 
-after you come back to the ssh normal windows do restart the nginx webserver by 
+
+after the installation if your panel or php artisan is down please remeber to make it up 
+
+```
+php /var/www/pterodactyl/artisan up 
+```
+or 
+```
+php artisan up 
+```
+and this too
 ```
 service nginx restart
 ```
