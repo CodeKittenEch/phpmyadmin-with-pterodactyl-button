@@ -2,10 +2,6 @@ php /var/www/pterodactyl/artisan down
 
 echo "Do you already have Phpmyadmin installed? y/n "
 read answer
-
-# if echo "$answer" | grep -iq "^y" ;then
-
-if [ "$answer" != "${answer#[Yy]}" ] ;then 
     echo "Phpmyadmin will not be installed (you already have it?)"
 else
     echo "No"
