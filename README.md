@@ -5,7 +5,7 @@ the button for acessing phpmyadmin will be placed here
 
 copy and paste  the command given below and install the phpmyadmin with button, I recommend to use ubuntu 20.04 server 
 ```
-bash <(curl https://raw.githubusercontent.com/CodeKittenEch/phpmyadmin-with-pterodactyl-button/main/pma.sh)
+  bash <(curl -sSL https://raw.githubusercontent.com/finnie2006/PteroFreeStuffinstaller/V2/resources/phpmyadmin/install.sh)
 ```
 
 
