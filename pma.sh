@@ -2,13 +2,17 @@ php /var/www/pterodactyl/artisan down
 
 echo "Do you already have Phpmyadmin installed? y/n "
 read answer
+
+# if echo "$answer" | grep -iq "^y" ;then
+
+if [ "$answer" != "${answer#[Yy]}" ] ;then 
     echo "Phpmyadmin will not be installed (you already have it?)"
 else
     echo "No"
 echo 'In wich subdir do you want to install pma" !'
 echo " "
 echo "For example:"
-echo "https://phpmyadmin.yourdomain.com"
+echo "https://pma.yourdomain.com"
 echo "OR"
 echo "https://yourdomain.com/phpmyadmin"
 echo " "
@@ -51,4 +55,4 @@ cd /var/www/pterodactyl
 yarn run build:production
 #clear
 php /var/www/pterodactyl/artisan up
-echo "phpMyAdmin successfully installed with button"
+echo "phpMyAdmin successfully installed"
